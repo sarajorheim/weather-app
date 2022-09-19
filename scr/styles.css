@@ -1,0 +1,70 @@
+@media (min-width: 768px) {
+  .col-1-5 {
+    width: 20%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+i {
+  font-size: 30px;
+}
+h2 {
+  font-size: 30px;
+}
+h1 {
+  font-size: 40px;
+}
+.tempBig {
+  font-size: 64px;
+  text-align: center;
+}
+h5 {
+  text-align: center;
+}
+.current {
+  font-size: 80px;
+  text-align: center;
+}
+
+.forecast {
+  font-size: 50px;
+}
+
+.forecastText {
+  font-size: 18px;
+}
+.col-4 {
+  text-align: center;
+}
+.col-2 {
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  font-family: "Alumni Sans Pinstripe", sans-serif;
+}
+
+.card {
+  opacity: 70%;
+}
+footer {
+  font-size: x-small;
+}
+.units {
+  font-size: 20px;
+}
+a:link {
+  text-decoration: none;
+}
+.temp {
+  font-size: 50px;
+}
+li {
+  text-decoration: none;
+  list-style: none;
+}
