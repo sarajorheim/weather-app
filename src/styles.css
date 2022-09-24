@@ -67,6 +67,7 @@ a:link {
 li {
   text-decoration: none;
   list-style: none;
+  font-size: 25px;
 }
 .openSource {
   font-size: 20px;
