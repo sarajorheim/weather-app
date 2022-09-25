@@ -51,9 +51,13 @@ function displayWeatherCondition(response) {
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+    response.data.weather[0].description;
   let iconElement = document.querySelector("#icon");
-  iconElement.innerHTML = "https://openweathermap.org/img/wn/04d@2x.png";
+  iconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
