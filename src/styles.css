@@ -86,3 +86,6 @@ h2.temp {
 .card-body .active:hover {
   text-decoration: none;
 }
+.week-forcast {
+  text-align: center;
+}
