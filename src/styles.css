@@ -89,3 +89,12 @@ h2.temp {
 .week-forcast {
   text-align: center;
 }
+.weather-forcast-date {
+  font-size: 25px;
+}
+.weather-forecast-temperatures-min {
+  opacity: 0.6;
+}
+.weather-forecast-temperatures {
+  font-size: 20px;
+}
