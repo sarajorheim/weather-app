@@ -79,3 +79,10 @@ h2.temp {
 #temperature {
   font-weight: 700;
 }
+.card-body .active {
+  color: black;
+  cursor: default;
+}
+.card-body .active:hover {
+  text-decoration: none;
+}
