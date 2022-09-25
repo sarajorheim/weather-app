@@ -41,6 +41,30 @@ let month = months[now.getMonth()];
 
 dateLi.innerHTML = `${day}, ${month} ${currentDate}, ${currentHour}: ${currentMinutes}`;
 
+function displayForcast() {
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = `
+  
+     
+        <div class="row">
+          <div class="col-2">
+            <div class="weather-forcast-date">mon</div>
+
+            <img
+              src="https://openweathermap.org/img/wn/50d@2x.png"
+              alt=""
+              width="40"
+            />
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temperatures-max">15°</span>
+              <span class="weather-forecast-temperatures-min">12°</span>
+            </div>
+          </div>
+        </div>
+      </div>
+  `;
+}
+
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
@@ -114,5 +138,5 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
-
+displayForcast();
 searchCity("New York");
