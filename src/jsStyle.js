@@ -44,12 +44,14 @@ dateLi.innerHTML = `${day}, ${month} ${currentDate}, ${currentHour}: ${currentMi
 function displayForcast() {
   let forecastElement = document.querySelector("#forecast");
 
-  let forecastHTML = `<div class="row"`;
-  forecastHTML =
-    forecastHTML +
+  let forecastHTML = `<div class="row">`;
+ 
+  let days=["Mon", "Tue", "Wed", "Thu","Fri", "Sat"];
+  days.forEach(function(day){
+  forecastHTML =   forecastHTML +
     `
           <div class="col-2">
-            <div class="weather-forcast-date">mon</div>
+            <div class="weather-forcast-date">${day}</div>
             <img
               src="https://openweathermap.org/img/wn/50d@2x.png"
               alt=""
@@ -62,26 +64,7 @@ function displayForcast() {
           </div>
        
   `;
-  forecastHTML =
-    forecastHTML +
-    `
-        
-          <div class="col-2">
-            <div class="weather-forcast-date">tue</div>
-
-            <img
-              src="https://openweathermap.org/img/wn/50d@2x.png"
-              alt=""
-              width="40"
-            />
-            <div class="weather-forecast-temperatures">
-              <span class="weather-forecast-temperatures-max">18°</span>
-              <span class="weather-forecast-temperatures-min">12°</span>
-            </div>
-          </div>
-        
-     
-  `;
+  });
   forecastHTML = forecastHTML + `</div>`;
   forecastElement.innerHTML = forecastHTML;
 }
@@ -161,3 +144,5 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 displayForcast();
 searchCity("New York");
+
+//video -09:11 (JS template)
